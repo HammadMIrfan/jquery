@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <!-- <button>Hello</button> -->
+    <p id="para">
+      Loorem ipsum dolor sit amet consectetur adipisicing elit. Et labore est
+      libero earum excepturi? Nostrum neque enim eligendi quasi, laboriosam,
+      perspiciatis aspernatur error non dignissimos fugiat quos similique qui
+      assumenda.
+    </p>
+
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("p").toggle();
+        });
+      });
+
+      $(document).ready(function () {
+        $("p").click(function () {
+          $(this).hide();
+        });
+      });
+
+      $(document).ready(function () {
+        $("p").dblclick(function () {
+          $(this).hide();
+        });
+      });
+
+      $(document).ready(function () {
+        $("#para").mouseenter(function () {
+          alert("hello world");
+        });
+      });
+
+      $(document).ready(function () {
+        $("#para").mouseleave(function () {
+          alert("hello world");
+        });
+      });
+
+      $(document).ready(function () {
+        $("#para").mouseup(function () {
+          alert("hello world");
+        });
+      });
+
+      $(document).ready(function () {
+        $("#para").mousedown(function () {
+          alert("hello world");
+        });
+      });
+    </script>
+  </body>
+</html>
